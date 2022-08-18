@@ -4484,11 +4484,12 @@ dependencies = [
 [[package]]
 name = "webbrowser"
 version = "0.7.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fc6a3cffdb686fbb24d9fb8f03a213803277ed2300f11026a3afe1f108dc021b"
+source = "git+https://github.com/hakolao/webbrowser-rs?branch=ios-open-url#894977de4e0eb74879c89c754229af9fe87b8781"
 dependencies = [
  "jni",
- "ndk-glue 0.6.2",
+ "ndk-glue 0.5.2",
+ "objc",
+ "raw-window-handle 0.5.0",
  "url",
  "web-sys",
  "widestring",
